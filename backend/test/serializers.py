@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
-from quickstart import models
+from test import models
 # Serializer 사용
 
 

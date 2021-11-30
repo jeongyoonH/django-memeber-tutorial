@@ -11,11 +11,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 
-
 from pathlib import Path
 
-
-
+APPEND_SLASH=True
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,10 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h%kdceq29m38%w!v6@9xr%l*=-kkosexow=5&d(34)swbbtlus'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ROOT_URLCONF = 'tutorial.urls'
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1']
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'quickstart',
+    'test',
     'member_management'
 ]
 
